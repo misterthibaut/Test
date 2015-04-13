@@ -49,10 +49,10 @@ Envoyer /recevoir les modifs  vers/depuis un serveur :
 
 	Envoyer : $ git push
 
-	Recevoir : $ git pull
+	Recevoir : $ git pull (recupere ET integre les changements)
 
-	$ git fetch (recupere ET integre les changements)
-	
+	$ git fetch (récupere simplement les changements)
+
 
 
           
