@@ -54,5 +54,12 @@ Envoyer /recevoir les modifs  vers/depuis un serveur :
 	$ git fetch (récupere simplement les changements)
 
 
+A quoi peuvent ressembler de "vrais" commits :
+	En general : -changement unitaire (une fonctionnalité, un bug...)
+				 -message explicatif
+
+	Exemples : https://git.kernel.org
+
+
 
           
