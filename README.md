@@ -38,6 +38,7 @@ Raccourcis :
 
 
 Revoir les commits : 
+
 	$ gitk (interface graphique)
 	$ git log (affiche dans le terminal)
 	$ git log -p (affiche les modifications en plus)
@@ -45,8 +46,13 @@ Revoir les commits :
 	$ git log --oneline (résumé des commit sur une ligne)	
 
 Envoyer /recevoir les modifs  vers/depuis un serveur : 
+
 	Envoyer : $ git push
+
 	Recevoir : $ git pull
+
+	$ git fetch (recupere ET integre les changements)
+	
 
 
           
