@@ -60,6 +60,8 @@ A quoi peuvent ressembler de "vrais" commits :
 
 	Exemples : https://git.kernel.org
 
+				ex : git.git --> log
+
 
 
           
