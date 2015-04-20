@@ -62,6 +62,19 @@ A quoi peuvent ressembler de "vrais" commits :
 
 				ex : git.git --> log
 
+	Ajout de Fichiers : Ajout --> git add fichiers... 
+	      	 	    Suppression --> git rm fichiers...
+			    Renommer/deplacer : git mv source destination
+NB : en ratique, ça revient à une suppression et un ajout. 
+     		 On peut constater avec : git log --summary
+		    	 	   	  git log --summary -M
+					
+				
+Mettre du travail de coté :
 
-
-          
+       git stash     (Met les modifs de coté sous forme de pile)
+       git stash pop [id] (depile et applique les dernieres modifs sauvegardées par git stash)
+       git stash drop [id](dépile et supprime les dernieres modifs)
+       git stash show  [id](dernieres modifications)
+       git stash list (donne la liste d'id de chaque modifs) ------- man git stash (docu)
+       
