@@ -78,3 +78,28 @@ Mettre du travail de coté :
        git stash show  [id](dernieres modifications)
        git stash list (donne la liste d'id de chaque modifs) ------- man git stash (docu)
        
+
+Fichier .gitignore : 
+	Creer un fichier ****.gitignore (à enregistrer dans le depot) et mettre ce que l'on ne veut pas dedans par ex :
+	*~
+	*.bak
+	*.o
+	*.class
+	Essai.java
+
+
+Les branches : 
+    Le merge est la reassociation entre une branche du projet et la branche du master.
+    Creation de branche : git branch [experimental]
+    liste des branches : git branch
+    changer de branche : git checkout [experimental]
+    merge : git merge experimental ---> Si conflit, merge s'arrête et les points problématiques sont indiqués.
+    Pour les voir : git diff (On peut resoudre les problemes grâce à ça, puis commit -a)
+    Suppression branche : git branch -d experimental
+    Pour forcer : git branch -D branche_foireuse 
+
+Etiqueter une version :
+	$ git tag NOM [commit]      ex : git tag v1.0
+
+
+    	 
