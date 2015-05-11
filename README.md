@@ -99,7 +99,12 @@ Les branches :
     Pour forcer : git branch -D branche_foireuse 
 
 Etiqueter une version :
-	$ git tag NOM [commit]      ex : git tag v1.0
+	$ git tag NOM [commit]      ex : git tag v1.0   ---> le [commit] peut etre la reference au commit ou quelque chose qui nous explique quel commit viser (ex : HEAD^)
+Lister les tags existant : 
+	git tag
+Ressortir un commit tagé : 
+	git checkout NOM
+
 
 
     	 
