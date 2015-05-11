@@ -129,5 +129,5 @@ Pour faire des commits propres (courts, unitaires...) :
 	- Completer le dernier commit : ---> ATTENTION ! avant de partager avc git push par ex.
 		$ git commit --amend
  
-		$ 
+	
     	 
