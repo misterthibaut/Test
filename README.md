@@ -119,5 +119,7 @@ Identifier le commit à l'origine d'un probleme :
 				   $ git bisect good (ou bad selon les tests) 
 
 
-
+Pour faire des commits propres (courts, unitaires...) :
+	- Selectionner ce que l'on ajoute pour un commit
+		$ git add -p [fichier] (pose la question pour chaque modif)
     	 
