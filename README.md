@@ -100,10 +100,23 @@ Les branches :
 
 Etiqueter une version :
 	$ git tag NOM [commit]      ex : git tag v1.0   ---> le [commit] peut etre la reference au commit ou quelque chose qui nous explique quel commit viser (ex : HEAD^)
+
 Lister les tags existant : 
-	git tag
+	$ git tag
 Ressortir un commit tagé : 
-	git checkout NOM
+	$ git checkout NOM
+
+
+Identifier l'origine des changements : 
+	$ git blame fichier
+
+
+Identifier le commit à l'origine d'un probleme : 
+	$ git bisect          ex : $ git bisect start
+				   $ git bisect bad (derniere version par défaut si pas referenciée)
+				   $ git bisect good v1.52
+
+				   $ git bisect good (ou bad selon les tests) 
 
 
 
