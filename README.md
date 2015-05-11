@@ -122,4 +122,12 @@ Identifier le commit à l'origine d'un probleme :
 Pour faire des commits propres (courts, unitaires...) :
 	- Selectionner ce que l'on ajoute pour un commit
 		$ git add -p [fichier] (pose la question pour chaque modif)
+
+	- Annuler un commit : 
+		$ git revert identifiant
+
+	- Completer le dernier commit : ---> ATTENTION ! avant de partager avc git push par ex.
+		$ git commit --amend
+ 
+		$ 
     	 
