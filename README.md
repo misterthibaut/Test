@@ -175,7 +175,7 @@ Recuperer (faire une copie) un dépot :
 Travailler à plusieurs : 
 	-> man gittutorial
 	"USING GIT FOR COLLABORATION"
-		--> bien fixer les droits d'acces
+		--> bien fixer les droits d'acces :
 			->fichers : lecture (r)
 			->repertoire : lecture + execution (r + x)
 			->repertoires parents : exécution
