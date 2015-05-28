@@ -160,3 +160,8 @@ Avant de faire un push, on aimerait revenir sur les derniers commits (pour les c
 
 Lors d'un travail à plusieurs,on souhaite ajouter notre travail apres de nombreux commits au travail realisé par mes collegues qui eux aussi ont fait des commits entre temps : 
 		$ git pull --rebase
+
+
+Creer un dépot git local :
+	$ git init (Dans n répertoire donné)
+
