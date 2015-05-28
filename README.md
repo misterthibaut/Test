@@ -131,6 +131,7 @@ Pour faire des commits propres (courts, unitaires...) :
  
 
 Annuler des changements / les derniers commits (totalement) :
+
 	ATTENTION ! --> à éviter si les commits ont déjà été partagés
 
 	$ git reset [mode] [identifiant commit] --> reinitialise le dépot au commit donné (en effaçant tous ce qui a été fait apres ce commit)
@@ -145,4 +146,10 @@ ex : $ git reset HEAD^^ ---> supprime les deux derniers commits
 
      $ git reset --hard ----> reinitialise le repertoire de travail au dernier commit
 	
+
+Avant de faire un push, on aimerait revenir sur les derniers commits (pour les completer, en supprimer, en changer l'ordre, fusionner...) :
+
+	$ git rebase -i origin/master	----> -i = mode interactif  // origin/master = origine des commits que l'on veut modifier
+		--> un editeur est lancé avec la liste des commits qui vont être appliqués
+
     	 
