@@ -65,7 +65,7 @@ A quoi peuvent ressembler de "vrais" commits :
 	Ajout de Fichiers : Ajout --> git add fichiers... 
 	      	 	    Suppression --> git rm fichiers...
 			    Renommer/deplacer : git mv source destination
-NB : en ratique, ça revient à une suppression et un ajout. 
+NB : en pratique, ça revient à une suppression et un ajout. 
      		 On peut constater avec : git log --summary
 		    	 	   	  git log --summary -M
 					
@@ -123,11 +123,20 @@ Pour faire des commits propres (courts, unitaires...) :
 	- Selectionner ce que l'on ajoute pour un commit
 		$ git add -p [fichier] (pose la question pour chaque modif)
 
-	- Annuler un commit : 
+	- Annuler un commit (en laissant une trace) : 
 		$ git revert identifiant
 
-	- Completer le dernier commit : ---> ATTENTION ! avant de partager avc git push par ex.
+	- Completer le dernier commit : ---> ATTENTION ! avant de partager avc git push par ex. et ne pas oublier de faire git add avant !
 		$ git commit --amend
  
+
+Annuler des changements / les derniers commits (totalement) :
+	ATTENTION ! --> à éviter si les commits ont déjà été partagés
+
+	$ git reset [mode] [identifiant commit] --> reinitialise le dépot au commit donné (en effaçant tous ce qui a été fait apres ce commit)
+
+	mode :  --soft      reinitialise le dépot seulement (pas le répertoire de travail)
+		--mixed     reinitialise le dépot et l'index (par défault)
+		--hard      reinitialise tout y compris le repertoire de travail
 	
     	 
