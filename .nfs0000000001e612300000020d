@@ -157,6 +157,3 @@ Avant de faire un push, on aimerait revenir sur les derniers commits (pour les c
 		ou alors : $ git rebase --skip      pour ignorer le commit qui pose probleme 
 		ou : 	   $ git rebase --about     pour annuler l'opération rebase
     	 
-
-Lors d'un travail a plusieurs,on souhaite ajouter notre travail apres de nombreux commits au travail realisé par mes collegues : 
-		$ git pull --rebase
