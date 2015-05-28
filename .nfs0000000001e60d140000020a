@@ -152,8 +152,4 @@ Avant de faire un push, on aimerait revenir sur les derniers commits (pour les c
 	$ git rebase -i origin/master	----> -i = mode interactif  // origin/master = origine des commits que l'on veut modifier
 		--> un editeur est lancé avec la liste des commits qui vont être appliqués
 
- >>>> si probleme (conflit par ex), le rebase s'arrete pour qu'on puisse le corriger
-	une fois corrigé : $ git rebase --continue  --->pour poursuivre
-		ou alors : $ git rebase --skip      pour ignorer le commit qui pose probleme 
-		ou : $ git rebase --about           pour annuler l'opération rebase
     	 
