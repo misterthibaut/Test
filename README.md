@@ -163,5 +163,5 @@ Lors d'un travail à plusieurs,on souhaite ajouter notre travail apres de nombre
 
 
 Creer un dépot git local :
-	$ git init (Dans n répertoire donné)
+	$ git init (Dans un répertoire donné)
 
