@@ -1,6 +1,6 @@
 # Test
 
-Recuperer une copie local : ds un terminal : git clone "URL"
+Recuperer une copie local : ds un terminal : $ git clone "URL"
 URL = http://github.com/login/Test.git
 ou git@github.com : login/Test.git
 
@@ -62,12 +62,12 @@ A quoi peuvent ressembler de "vrais" commits :
 
 				ex : git.git --> log
 
-	Ajout de Fichiers : Ajout --> git add fichiers... 
-	      	 	    Suppression --> git rm fichiers...
-			    Renommer/deplacer : git mv source destination
+	Ajout de Fichiers : Ajout --> $ git add fichiers... 
+	      	 	    Suppression --> $ git rm fichiers...
+			    Renommer/deplacer : $ git mv source destination
 NB : en pratique, ça revient à une suppression et un ajout. 
-     		 On peut constater avec : git log --summary
-		    	 	   	  git log --summary -M
+     		 On peut constater avec : $ git log --summary
+		    	 	   	  $ git log --summary -M
 					
 				
 Mettre du travail de coté :
