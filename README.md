@@ -31,9 +31,9 @@ Commandes Git :
 
 Raccourcis : 
 
-	git commit -s :  fait autmatiquement le "add" pour les fichiers deja connus de git
-	git commit -- fichier : le fichier est ajouté pour le commit
-	git commit -m "message" : Ecris le message directement
+	$ git commit -s :  fait autmatiquement le "add" pour les fichiers deja connus de git
+	$ git commit -- fichier : le fichier est ajouté pour le commit
+	$ git commit -m "message" : Ecris le message directement
 
 
 
@@ -72,11 +72,11 @@ NB : en pratique, ça revient à une suppression et un ajout.
 				
 Mettre du travail de coté :
 
-       git stash     (Met les modifs de coté sous forme de pile)
-       git stash pop [id] (depile et applique les dernieres modifs sauvegardées par git stash)
-       git stash drop [id](dépile et supprime les dernieres modifs)
-       git stash show  [id](dernieres modifications)
-       git stash list (donne la liste d'id de chaque modifs) ------- man git stash (docu)
+     $ git stash     (Met les modifs de coté sous forme de pile)
+     $ git stash pop [id] (depile et applique les dernieres modifs sauvegardées par git stash)
+     $ git stash drop [id](dépile et supprime les dernieres modifs)
+     $ git stash show  [id](dernieres modifications)
+     $ git stash list (donne la liste d'id de chaque modifs) ------- man git stash (docu)
        
 
 Fichier .gitignore : 
@@ -90,13 +90,13 @@ Fichier .gitignore :
 
 Les branches : 
     Le merge est la reassociation entre une branche du projet et la branche du master.
-    Creation de branche : git branch [experimental]
-    liste des branches : git branch
-    changer de branche : git checkout [experimental]
-    merge : git merge experimental ---> Si conflit, merge s'arrête et les points problématiques sont indiqués.
-    Pour les voir : git diff (On peut resoudre les problemes grâce à ça, puis commit -a)
-    Suppression branche : git branch -d experimental
-    Pour forcer : git branch -D branche_foireuse 
+    Creation de branche : $ git branch [experimental]
+    liste des branches : $ git branch
+    changer de branche : $ git checkout [experimental]
+    merge : $ git merge experimental ---> Si conflit, merge s'arrête et les points problématiques sont indiqués.
+    Pour les voir : $ git diff (On peut resoudre les problemes grâce à ça, puis commit -a)
+    Suppression branche : $ git branch -d experimental
+    Pour forcer : $ git branch -D branche_foireuse 
 
 Etiqueter une version :
 	$ git tag NOM [commit]      ex : git tag v1.0   ---> le [commit] peut etre la reference au commit ou quelque chose qui nous explique quel commit viser (ex : HEAD^)
@@ -164,4 +164,17 @@ Lors d'un travail à plusieurs,on souhaite ajouter notre travail apres de nombre
 
 Creer un dépot git local :
 	$ git init (Dans un répertoire donné)
+
+Recuperer (faire une copie) un dépot : 
+	$ git clone /chemin/vers/depot/ (depuis la source dans le repertoire ou l'on est)
+	$ git clone ssh://login@machine/chemin/vers/depot/
+
+	$ git pull  ---> recuperer les dernieres modifs
+			--> eviter les push !
+			
+Travailler à plusieurs : 
+	-> man gittutorial
+	"USING GIT FOR COLLABORATION"
+		--> bien fixer les droits d'acces
+
 
