@@ -138,5 +138,11 @@ Annuler des changements / les derniers commits (totalement) :
 	mode :  --soft      reinitialise le dépot seulement (pas le répertoire de travail)
 		--mixed     reinitialise le dépot et l'index (par défault)
 		--hard      reinitialise tout y compris le repertoire de travail
+
+	identifiant commit : par défault HEAD (= dernier commit)
+
+ex : $ git reset HEAD^^ ---> supprime les deux derniers commits
+
+     $ git reset --hard ----> reinitialise le repertoire de travail au dernier commit
 	
     	 
